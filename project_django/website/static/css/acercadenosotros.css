@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ajuste: Cambiado "100" a "center" */
+}
+
+.logo {
+    font-size: 2em;
+    color: rgb(68, 60, 60);
+    cursor: pointer; /* Ajuste: Cambiado "default" a "pointer" */
+}
+
+span {
+    color: rgb(0, 102, 255);
+}
+
+.navigation {
+    font-size: 1.1em; /* Ajuste: Agregado "em" después de "1.1" */
+    color: rgb(68, 60, 60);
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: 500;
+    display: flex; /* Ajuste: Agregado "display: flex;" para corregir el espaciado */
+}
+
+.navigation a {
+    text-decoration: none;
+    color: rgb(68, 60, 60);
+    margin-right: 20px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.navigation a:hover {
+    color: rgb(0, 102, 255);;
+}
+
+.tombol-download {
+    color: white;
+    text-decoration: none;
+    padding: 8px 35px;
+    background: rgb(0, 102, 255);;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 102, 255);;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.tombol-download:hover {
+    color: rgb(0, 102, 255);;
+    background: transparent;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center; /* Ajuste: Cambiado "30px 100px" a "center" */
+    color: rgb(0, 0, 0);
+    text-align: center; /* Ajuste: Alineado el texto al centro */
+}
+
+.content {
+    max-width: 500px;
+    margin: 0 auto; /* Ajuste: Centrado el contenido */
+}
+
+.content h2 {
+    font-size: 3em;
+}
+
+.content h4 {
+    font-size: 2em;
+}
+
+.content p {
+    padding: 10px 0 40px 0;
+}
+
+.grup-tombol {
+    display: flex; /* Ajuste: Agregado "display: flex;" para corregir el espaciado */
+    justify-content: center; /* Ajuste: Centrado el contenido */
+    margin-top: 20px; /* Ajuste: Añadido margen superior */
+}
+
+.grup-tombol a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    margin-right: 20px;
+    background: rgb(0, 102, 255);;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 102, 255);;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.grup-tombol a:hover {
+    color: rgb(0, 102, 255);;
+    background: transparent;
+}
+
+.sosmed {
+    position: absolute;
+    bottom: 20px; /* Ajuste: Movido a la parte inferior */
+    left: 50%; /* Ajuste: Centrado horizontalmente */
+    transform: translateX(-50%); /* Ajuste: Centrado horizontalmente */
+    display: flex; /* Ajuste: Agregado "display: flex;" para corregir el espaciado */
+}
+
+.sosmed a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 35px;
+    outline: 3px solid rgb(0, 102, 255);;
+    transition: .3s;
+}
+
+.sosmed a:hover {
+    transform: translateY(-5px);
+}
+
+.sosmed a i {
+    color: rgb(68, 60, 60);
+    font-size: 20px;
+}

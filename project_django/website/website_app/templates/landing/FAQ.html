@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            color: #007bff;
+        }
+
+        .answer {
+            display: none;
+            margin-top: 10px;
+        }
+
+       .footer-image img {
+            width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+            max-width: 400px; /* Establece el ancho máximo de la imagen */
+            margin: 20px auto; /* Centra la imagen horizontalmente y agrega espacio superior */
+            display: block; /* Elimina cualquier espacio adicional debajo de la imagen */
+        }
+
+        .grup-tombol {
+    display: flex; /* Ajuste: Agregado "display: flex;" para corregir el espaciado */
+    justify-content: center; /* Ajuste: Centrado el contenido */
+    margin-top: 20px; /* Ajuste: Añadido margen superior */
+}
+
+.grup-tombol a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    margin-right: 20px;
+    background: rgb(0, 102, 255);;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 102, 255);;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.grup-tombol a:hover {
+    color: rgb(0, 102, 255);;
+    background: transparent;
+}
+.logo {
+    font-size: 2em;
+    color: rgb(68, 60, 60);
+    cursor: pointer; /* Ajuste: Cambiado "default" a "pointer" */
+}
+span {
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2 class="logo"><span>Preguntas Frecuentes</span> FAQ</h2>
+    </header>
+
+    <section>
+        <div class="faq-item">
+            <div class="question">¿Cómo puedo registrarme en el sitio?</div>
+            <div class="answer">Para registrarte en nuestro sitio, ve a la página de inicio y haz clic en el botón "Registrarse". Llena el formulario con tu información y sigue las instrucciones para completar el proceso de registro.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">¿Cómo restablezco mi contraseña?</div>
+            <div class="answer">Si olvidaste tu contraseña, ve a la página de inicio de sesión y haz clic en "Olvidé mi contraseña". Sigue las instrucciones para restablecer tu contraseña a través del correo electrónico asociado a tu cuenta.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">¿Cómo puedo ponerme en contacto con el soporte técnico?</div>
+            <div class="answer">Puedes ponerte en contacto con nuestro equipo de soporte técnico enviando un correo electrónico a support@example.com o llamando al número +123 456 7890 durante nuestro horario comercial.</div>
+        </div>
+
+        <!-- Agrega más preguntas y respuestas según sea necesario -->
+
+    </section>
+
+    <div class="footer-image">
+        <img src="/project_django/website/static/css/FAQs-amico.png" alt="Imagen de pie de página">
+    </div>
+    <div class="grup-tombol">
+        <a href="\project_django\website\website_app\templates\landing\index.html">Regresar</a>
+    </div>
+</body>
+</html>
