@@ -1,120 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suscripción</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+{% extends "base.html" %}
 
-        header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
+{% block titulo %}Subcripcion{% endblock titulo %}
+{% block cabeza %}Suscríbete{% endblock cabeza %}
+{% block interfaz %}<label for="mensaje">
+            <button type="submit">Suscribirse</button>{% endblock interfaz %}
+{% block informacion %}<h2>Beneficios de la Suscripción</h2>
+            <p>Recibe las últimas noticias directamente en tu correo electrónico.
 
-        section {
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-            color: #333;
-        }
-
-        input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        button {
-            background-color: #007bff; /* Azulito */
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #0056b3; /* Cambia el color al pasar el ratón */
-        }
-
-        .subscription-info {
-            margin-top: 20px;
-        }
-
-        .subscription-info p {
-            margin: 5px 0;
-        }
-
-        .grup-tombol {
-    display: flex; /* Ajuste: Agregado "display: flex;" para corregir el espaciado */
-    justify-content: center; /* Ajuste: Centrado el contenido */
-    margin-top: 20px; /* Ajuste: Añadido margen superior */
-}
-
-.grup-tombol a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 30px;
-    margin-right: 20px;
-    background: rgb(0, 102, 255);;
-    border-radius: 10px;
-    border: 2px solid rgb(0, 102, 255);;
-    font-weight: 500;
-    transition: .3s;
-}
-
-.grup-tombol a:hover {
-    color: rgb(0, 102, 255);;
-    background: transparent;
-}
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>Suscríbete</h1>
-    </header>
-
-    <section>
-        <form action="#" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="correo">Correo Electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
-
-            <button type="submit">Suscribirse</button>
-        </form>
-
-        <div class="subscription-info">
-            <h2>Beneficios de la Suscripción</h2>
-            <p>Recibe las últimas noticias directamente en tu correo electrónico.</p>
-            <p>Participa en sorteos y promociones exclusivas para suscriptores.</p>
-            <p>Mantente informado sobre eventos especiales y novedades.</p>
-        </div>
-        <div class="grup-tombol">
-            <a href="\project_django\website\website_app\templates\landing\index.html">Regresar</a>
-        </div>
-    </section>
-
-</body>
-</html>
+                Participa en sorteos y promociones exclusivas para suscriptores.
+                
+                Mantente informado sobre eventos especiales y novedades.</p>
+            {% endblock informacion %}

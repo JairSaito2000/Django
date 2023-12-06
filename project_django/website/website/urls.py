@@ -25,4 +25,5 @@ urlpatterns = [
     path('contactanos/', views.contactanos, name='contactanos.html'),
     path('faq/', views.faq,name='faq.html'),
     path('suscripcion/', views.suscripcion,name='suscripcion.html'),
+    path('base', views.base,name='base.html'),
     ]

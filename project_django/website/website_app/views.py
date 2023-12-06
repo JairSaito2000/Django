@@ -10,3 +10,5 @@ def faq(request):
     return render(request, "landing/FAQ.html")
 def suscripcion(request):
     return render(request, "landing/suscripcion.html")
+def base(request):
+    return render(request, "landing/base.html")

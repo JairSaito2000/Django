@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -114,10 +115,10 @@ span {
     </section>
 
     <div class="footer-image">
-        <img src="/project_django/website/static/css/FAQs-amico.png" alt="Imagen de pie de página">
+        <img src="{% static 'css/faq.png' %}" alt="Imagen de pie de página">
     </div>
     <div class="grup-tombol">
-        <a href="\project_django\website\website_app\templates\landing\index.html">Regresar</a>
+        <a href="/">Regresar</a>
     </div>
 </body>
 </html>

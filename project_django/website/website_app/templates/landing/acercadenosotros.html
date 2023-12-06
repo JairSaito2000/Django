@@ -1,15 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="\project_django\website\static\css\acercadenosotros.css">
+    <link rel="stylesheet" href={% static "css/acercadenosotros.css" %}>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-image: url('/project_django/website/static/css/Research paper-pana.png'); /* Ruta a tu imagen PNG */
+            background-image: url({% static "css/Research.png" %}); /* Ruta a tu imagen PNG */
             background-color: white;
             background-size: cover;
             background-position: center;
