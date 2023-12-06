@@ -21,4 +21,8 @@ from website_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
+    path('acerca_nosotros/', views.acercadenosotros, name='acercadenosotros.html'),
+    path('contactanos/', views.contactanos, name='contactanos.html'),
+    path('faq/', views.faq,name='faq.html'),
+    path('suscripcion/', views.suscripcion,name='suscripcion.html'),
     ]
