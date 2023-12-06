@@ -12,3 +12,5 @@ def suscripcion(request):
     return render(request, "landing/suscripcion.html")
 def base(request):
     return render(request, "landing/base.html")
+def nacional(request):
+    return render(request, "landing/nacional.html")
